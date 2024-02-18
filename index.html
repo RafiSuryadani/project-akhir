@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Akhir</title>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootsraps css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- slider -->
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <!-- custom css -->
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- navbar -->
+    <div class="custom-navbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="logo" href="#">
+                        <img src="assets/Logo.png" alt="logo">
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="right-menu">
+                        <div class="right-menu-item"><a href="about.html"><i class="bi bi-person"></i> Login </a></div>
+                        <div class="right-menu-item"><a href="#"><i class="bi bi-cart"></i> 0 </a></div>
+                        <div class="right-menu-item"><a href="#" id="btnToggle"><i class="bi bi-list"></i></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="list-menu-wrap">
+                <div class="list-menu-item">
+                    <a href="#"><i class="bi bi-telephone"></i> 0800 111 126</a>
+                    <hr class="line-footer">
+                </div>
+                <div class="list-menu-item">
+                    <a href="#">Delivery Info</a>
+                    <hr class="line-footer">
+                </div>
+                <div class="list-menu-item">
+                    <a href="#">About Us</a>
+                    <hr class="line-footer">
+                </div>
+                <div class="list-menu-item">
+                    <a href="#">Restaurant</a>
+                    <hr class="line-footer">
+                </div>
+                <div class="list-menu-item">
+                    <a href="#">Specialities</a>
+                    <hr class="line-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero-section -->
+    <div class="hero-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 p-4">
+                    <div class="hero-caption">
+                        <h1> Your Food court at home</h1>
+                        <div class="hero-btn">
+                            <button type="button" class="btn btn-outline"><b>Delivery</b><br>order in</button>
+                            <button type="button" class="btn btn-outline"><b>Take Out</b><br>Grab and Go</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm-12 col-md-8 p-4">
+                    <div class="hero-image">
+                        <img src="assets/hero-photo.svg" style="
+                        width: 100%;
+                        object-fit: contain;">
+                    </div>
+                </div>
+            </div>
+            <div class="hero-usp">
+                <div class="row">
+                    <img class="col-md-3 col-sm-3 col-xs-3" src="assets/hero1.png">
+                    <img class="col-md-3 col-sm-3 col-xs-3" src="assets/hero2.png">
+                    <img class="col-md-3 col-sm-3 col-xs-3" src="assets/hero3.png">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- restaurant slider -->
+    <div class="restaurant-slider">
+        <div class="container">
+            <h2>Restaurants</h2>
+            <section class="splide" id="restaurant-slider" aria-label="Splide Basic HTML Example">
+                <div class="splide__track">
+                    <ul class="splide__list text-center gap-4 p-3">
+                        <li class="splide__slide"><img src="assets/restaurant1.png" /></li>
+                        <li class="splide__slide"><img src="assets/restaurant2.png" /></li>
+                        <li class="splide__slide"><img src="assets/restaurant3.png" /></li>
+                        <li class="splide__slide"><img src="assets/restaurant4.png" /></li>
+                        <li class="splide__slide"><img src="assets/restaurant1.png" /></li>
+                        <li class="splide__slide"><img src="assets/restaurant2.png" /></li>
+                        <li class="splide__slide"><img src="assets/restaurant3.png" /></li>
+                        <li class="splide__slide"><img src="assets/restaurant4.png" /></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- find rearest -->
+
+    <div class="find-rearest">
+        <div class="container">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-7 p-4">
+                        <div class="find-rearest-content">
+                            <h1><b>Your nearest restaurants</b></h1>
+                            <p>Each kitchen works with its own delivery area to deliver food to you as soon as
+                                possible
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-5 p-4">
+                        <div class="input-location">
+                            <input type="url" class="form-control" placeholder="Enter delivery address">
+                            <button class="btn btn-send" type="submit">Send</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Specialities -->
+    <div class="speciialities-slider">
+        <div class="container">
+            <h2>Specialiities</h2>
+            <section class="splide" id="specialist-slider" aria-label="Splide Basic HTML Example">
+                <div class="splide__track">
+                    <ul class="splide__list text-center gap-4 p-5">
+                        <li class="splide__slide"><img src="assets/specialities1.png" /></li>
+                        <li class="splide__slide"><img src="assets/specialities2.png" /></li>
+                        <li class="splide__slide"><img src="assets/specialities3.png" /></li>
+                        <li class="splide__slide"><img src="assets/specialities4.png" /></li>
+                        <li class="splide__slide"><img src="assets/specialities5.png" /></li>
+                        <li class="splide__slide"><img src="assets/specialities6.png" /></li>
+                        <li class="splide__slide"><img src="assets/specialities7.png" /></li>
+                        <li class="splide__slide"><img src="assets/specialities8.png" /></li>
+                        <li class="splide__slide"><img src="assets/specialities1.png" /></li>
+                        <li class="splide__slide"><img src="assets/specialities2.png" /></li>
+                        <li class="splide__slide"><img src="assets/specialities3.png" /></li>
+                        <li class="splide__slide"><img src="assets/specialities4.png" /></li>
+                        <li class="splide__slide"><img src="assets/specialities5.png" /></li>
+                        <li class="splide__slide"><img src="assets/specialities6.png" /></li>
+                        <li class="splide__slide"><img src="assets/specialities7.png" /></li>
+                        <li class="splide__slide"><img src="assets/specialities8.png" /></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- usp -->
+
+    <div class="content4">
+        <div class="container">
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-md-3 mb-5 p-5 text-center">
+                        <img src="assets/kitchen.png">
+                    </div>
+                    <div class="col-md-3 mb-5 p-5 text-center">
+                        <img src="assets/specialist.png">
+                    </div>
+                    <div class="col-md-3 mb-5 p-5 text-center">
+                        <img src="assets/restaurant.png">
+                    </div>
+                    <div class="col-md-3 mb-5 p-5 text-center">
+                        <img src="assets/transport.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-maps ">
+        <div class="container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.496613921974!2d106.75924807485438!3d-6.198020493789693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f7186216690b%3A0x5fe8944030e526af!2sCourse-Net%20Jakarta!5e0!3m2!1sen!2sid!4v1707633307304!5m2!1sen!2sid"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <div class="instagram-content">
+        <div class="container">
+            <h2><b>#YellowKitchens</b> in instagram</h2>
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-3 mb-5 text-center ">
+                        <img src="assets/instagram1.jpg" style="
+                        width: 100%;
+                        object-fit: contain;">
+                    </div>
+                    <div class="col-md-3 mb-5 text-center ">
+                        <img src="assets/instagram2.jpg" style="
+                        width: 100%;
+                        object-fit: contain;">
+                    </div>
+                    <div class="col-md-3 mb-5 text-center ">
+                        <img src="assets/instagram3.jpg" style="
+                        width: 100%;
+                        object-fit: contain;">
+                    </div>
+                    <div class="col-md-3 mb-5 text-center ">
+                        <img src="assets/instagram4.jpg" style="
+                        width: 100%;
+                        object-fit: contain;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5">
+
+                <div class="col-md-4 mb-5 col-lg-3">
+                    <img src="assets/Logo2.png">
+                    <hr class="line-footer">
+                    <div class="app-store">
+                        <img src="assets/app-store.png" alt="">
+                        <img src="assets/google-play.png" alt="">
+                    </div>
+
+                </div>
+
+                <div class="col-md-4 mb-5 col-lg-3">
+                    <h5>About us</h5>
+                    <ul class="list-unstyled">
+                        <li class="m-2"><a href="#">Concept</a></li>
+                        <li class="m-2"><a href="#">Franchise</a></li>
+                        <li class="m-2"><a href="#">Business</a></li>
+                        <li class="m-2"><a href="#">Restaurant signup</a></li>
+                        <li class="m-2"><a href="#">For Investors</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 mb-5 col-lg-3">
+                    <h5>Get help</h5>
+                    <ul class="list-unstyled">
+                        <li class="m-2"><a href="#">Read FAQs</a></li>
+                        <li class="m-2"><a href="#">Restaurants</a></li>
+                        <li class="m-2"><a href="#">Specialities</a></li>
+                        <li class="m-2"><a href="#">Sign up to deliver</a></li>
+                        <li class="m-2"><a href="#">English</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 mb-5 col-lg-3">
+                    <h5>Contact us</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#">Yellow kitchen Paris 11</a></li>
+                        <li class="mb-2"><a href="#">69 avenue de la Republique 75011 Paris</a></li>
+                        <li class="mb-2"><a href="#">0800 111 126</a></li>
+                        <li class="mb-2"><a href="#">contact@yellowkitchens.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-flex flex-column flex-sm-row justify-content-between ">
+                <ul class="list-unstyled d-flex">
+                    <li class="ms-3"><a class="link-body-emphasis" href="#"><i class="bi bi-instagram"></i></a></li>
+                    <li class="ms-3"><a class="link-body-emphasis" href="#"><i class="bi bi-twitter"></i></a></li>
+                    <li class="ms-3"><a class="link-body-emphasis" href="#"><i class="bi bi-facebook"></i></a></li>
+                </ul>
+                <ul class="list-unstyled d-flex gap-4">
+                    <li class="mb-2"><a href="#">Privacy Policy</a></li>
+                    <li class="mb-2"><a href="#">Terms</a></li>
+                    <p>© 2020 Yellow kitchen</p>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
